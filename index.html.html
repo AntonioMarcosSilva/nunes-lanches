@@ -1,0 +1,1730 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cardápio de Lanches</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+    }
+    
+  
+    
+    /* Cabeçalho */
+.cabe{
+  background-color: red;
+  text-align: center;
+  
+  
+}
+
+
+ .cabe h1{
+   color: yellow;
+   
+ }
+ .header{
+   background-color: red;
+
+  
+ }
+
+.lista a{
+  color: green;
+  font-size: 25px;
+}
+
+/*titulo*/
+.nunes{
+  color: green;
+  text-align: center;
+}
+
+
+    /*cardapio e caixa de pedido*/
+    .cardapio {
+      font-size: 30px;
+      color: yellow;
+      width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    /*igredientes*/
+    .cardapio a2{
+      color: white;
+      font-size: 20px;
+     
+      
+      /*botões*/
+    }
+    
+    input[type="number"] {
+      width: 50px;
+      height: 30px;
+      font-size: 18px;
+      padding: 10px;
+    }
+    button {
+      width: 150px;
+      height: 30px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3e8e41;
+    }
+    a {
+      text-decoration: none;
+      color: #06c;
+    }
+    
+    /*rodapé*/
+    .footer{
+      color: white;
+      text-align: center;
+      background-color: red;
+     
+      
+      
+    }
+    
+    .tipo{
+      color: yellow;
+      text-align: center;
+      font-size; 200px;
+    }
+    
+  </style>
+</head>
+<body>
+
+<!--CABEÇALHO-->
+<header>
+  <div class="cabe">
+  <h1>
+  NUNES LANCHES DELIVERY
+  </h1>
+  <div class="lista">
+  
+  <!--links das redes-->
+   <nav>
+      <ul>
+        <a href="https://www.facebook.com/profile.php?id=100083359921729&mibextid=ZbWKwL">FACEBOOK</a>
+        <a href="https://cnpj.biz/49687061000168">SOBRE</a>
+        <a href="https://www.instagram.com/trailernunes?igsh=MW4xdDZkd3d0djJydw==">INSTAGRAM</a>
+      </ul>
+    </nav>
+    </div>
+  </div>
+  </header>
+
+
+<!--TITULO DO SITE-->
+<div class="nunes">
+ <h1>CARDÁPIO ONLINE, FAÇA SEU PEDIDO</h1>
+ </div>
+  
+  
+  <!-- Cardápio 1 o cardapio tem o tipo numero com a quantidade minima e maxima -->
+  <div class="tipo">
+  HAMBURGUERS
+  </div>
+  
+  <div class="cardapio">
+  <a2>pão de hamburguer, maionese caseira, hamburguer artesanal, queijo, molho de alho e molho especial</a2>
+    <h2>X-Burguer R$14,00</h2>
+   
+    
+    <input type="number" id="quantidade1" min="1" max="50" value="1">
+    <button id="gerar-pedido1">Gerar Pedido</button>
+    <a id="link-pedido1" href="#" target="_blank">Pedido</a>
+  </div>
+  
+  <!-- Cardápio 2 -->
+  <div class="cardapio">
+  <a2>pão de hamburguer, maionese caseira, hamburguer artesanal, queijo, alface americana,tomate, cebola roxa, molho dealho e molho especial</a2>
+  
+    <h2>X-Salada R$ 17,00</h2>
+    <input type="number" id="quantidade2" min="1" max="50" value="1">
+    <button id="gerar-pedido2">Gerar Pedido</button>
+    <a id="link-pedido2" href="#" target="_blank">Pedido</a>
+  </div>
+  
+   <div class="cardapio">
+   <a2>pão de hamburguer, maionese caseira, hamburguer artesanal, queijo, ovo, alface americana, tomate, cebola roxa, molho de alho e molho especial</a2>
+    <h2>X-Egg R$ 18,00</h2>
+    <input type="number" id="quantidade3" min="1" max="50" value="1">
+    <button id="gerar-pedido3">Gerar Pedido</button>
+    <a id="link-pedido3" href="#" target="_blank">Pedido</a>
+  </div>
+  
+  
+   <div class="cardapio">
+   <a2>pão de hamburguer, maionese caseira, hamburguer artesanal, queijo, alface americana, tomate, cebola roxa, calabresa, molho de alho e molho especial</a2>
+    <h2>X-Calabresa R$ 20,00</h2>
+    <input type="number" id="quantidade4" min="1" max="50" value="1">
+    <button id="gerar-pedido4">Gerar Pedido</button>
+    <a id="link-pedido4" href="#" target="_blank">Pedido</a>
+  </div>
+  
+  
+   <div class="cardapio">
+   <a2>pão de hamburguer, maionese caseira, hamburguer artesanal, queijo, alface americana, tomate, cebola roxa, bacon, molho de alho e molho especial</a2>
+    <h2>X-bacon R$ 20,00</h2>
+    <input type="number" id="quantidade5" min="1" max="50" value="1">
+    <button id="gerar-pedido5">Gerar Pedido</button>
+    <a id="link-pedido5" href="#" target="_blank">Pedido</a>
+  </div>
+  
+   <div class="cardapio">
+   <a2>pão de hamburguer, maionese caseira, hamburguer artesanal, queijo, alface americana, tomate, cebola roxa, ovo, bacon, calabresa, molho de alho e molho especial</a2>
+    <h2>X-tudo R$ 25,00</h2>
+    <input type="number" id="quantidade6" min="1" max="50" value="1">
+    <button id="gerar-pedido6">Gerar Pedido</button>
+    <a id="link-pedido6" href="#" target="_blank">Pedido</a>
+  </div>
+  
+   <div class="tipo">
+ ESPECIAL DA CASA
+  </div>
+  
+   <div class="cardapio">
+   <a2>Pão de hamburguer, maionese caseira, frango desfiado, catupiry, milho.</a2>
+    <h2>Galinhão R$16,00</h2>
+    <input type="number" id="quantidade7" min="1" max="50" value="1">
+    <button id="gerar-pedido7">Gerar Pedido</button>
+    <a id="link-pedido7" href="#" target="_blank">Pedido</a>
+  </div>
+  
+   <div class="cardapio">
+   <a2>Pão de hamburguer, maionese caseira, hamburguer artesanal,queijo, bacon, cheddar, cebola caramelizada e molho especial</a2>
+    <h2>Bacon Cheddar R$ 23,00</h2>
+    <input type="number" id="quantidade8" min="1" max="50" value="1">
+    <button id="gerar-pedido8">Gerar Pedido</button>
+    <a id="link-pedido8" href="#" target="_blank">Pedido</a>
+  </div>
+  
+   <div class="cardapio">
+   <a2>Pão de hamburguer, maionese caseira, hamburguer artesanal, queijo, doritos, alface americana, tomate, cebola roxa e molho especial.</a2>
+    <h2>X vitória (especial da casa) R$ 23,00</h2>
+    <input type="number" id="quantidade9" min="1" max="50" value="1">
+    <button id="gerar-pedido9">Gerar Pedido</button>
+    <a id="link-pedido9" href="#" target="_blank">Pedido</a>
+  </div>
+  
+   <div class="cardapio">
+   <a2>Pão de hambrguer, maionese caseira, hamburguer artesanal, queijo, cebola roxa, anel de cebola empanado, alface americana, tomate e molho especial</a2>
+    <h2>X Onions R$ 23,00</h2>
+    <input type="number" id="quantidade10" min="1" max="50" value="1">
+    <button id="gerar-pedido10">Gerar Pedido</button>
+    <a id="link-pedido10" href="#" target="_blank">Pedido</a>
+  </div>
+  
+   <div class="tipo">
+  HOT DOGS
+  </div>
+  
+   <div class="cardapio">
+   <a2>Pão de hot dog, maionese artesanal, 1 salsicha, vinagrete, ketchup e mostarda</a2>
+    <h2>Hot dog simples R$ 10,00</h2>
+    <input type="number" id="quantidade11" min="1" max="50" value="1">
+    <button id="gerar-pedido11">Gerar Pedido</button>
+    <a id="link-pedido11" href="#" target="_blank">Pedido</a>
+  </div>
+  
+   <div class="cardapio">
+   <a2>Pão de hot dog, maionese artesanal, 2 salsicha, vinagrete, batata palha, ketchup e mostarda</a2>
+    <h2>Hot dog completo R$ 12,00</h2>
+    <input type="number" id="quantidade12" min="1" max="50" value="1">
+    <button id="gerar-pedido12">Gerar Pedido</button>
+    <a id="link-pedido12" href="#" target="_blank">Pedido</a>
+  </div>
+  
+   <div class="tipo">
+  BEBIDAS
+  </div>
+  
+  
+   <div class="cardapio">
+    <h2>Cerveja lata R$ 6,00</h2>
+    <input type="number" id="quantidade13" min="1" max="50" value="1">
+    <button id="gerar-pedido13">Gerar Pedido</button>
+    <a id="link-pedido13" href="#" target="_blank">Pedido</a>
+  </div>
+  
+   <div class="cardapio">
+    <h2>Heniken lata R$ 9,00</h2>
+    <input type="number" id="quantidade14" min="1" max="50" value="1">
+    <button id="gerar-pedido14">Gerar Pedido</button>
+    <a id="link-pedido14" href="#" target="_blank">Pedido</a>
+  </div>
+  
+   <div class="cardapio">
+    <h2>Coca cola lata R$ 6,00</h2>
+    <input type="number" id="quantidade15" min="1" max="50" value="1">
+    <button id="gerar-pedido15">Gerar Pedido</button>
+    <a id="link-pedido15" href="#" target="_blank">Pedido</a>
+  </div>
+  
+   <div class="cardapio">
+    <h2>Fanta lata R$ 5,50</h2>
+    <input type="number" id="quantidade16" min="1" max="50" value="1">
+    <button id="gerar-pedido16">Gerar Pedido</button>
+    <a id="link-pedido16" href="#" target="_blank">Pedido</a>
+  </div>
+  
+   <div class="cardapio">
+    <h2>Sprite lata R$ 5,50</h2>
+    <input type="number" id="quantidade17" min="1" max="50" value="1">
+    <button id="gerar-pedido17">Gerar Pedido</button>
+    <a id="link-pedido17" href="#" target="_blank">Pedido</a>
+  </div>
+  
+   <div class="cardapio">
+    <h2>Refrigerante 2lt R$12,00</h2>
+    <input type="number" id="quantidade18" min="1" max="50" value="1">
+    <button id="gerar-pedido18">Gerar Pedido</button>
+    <a id="link-pedido18" href="#" target="_blank">Pedido</a>
+  </div>
+  
+  <div class="cardapio">
+    <h2>água R$ 2,50</h2>
+    <input type="number" id="quantidade19" min="1" max="50" value="1">
+    <button id="gerar-pedido19">Gerar Pedido</button>
+    <a id="link-pedido19" href="#" target="_blank">Pedido</a>
+  </div>
+  
+  
+   <div class="tipo">
+  ADICIONAIS
+  </div>
+  
+   <div class="cardapio">
+    <h2>Bacon R$ 4,00</h2>
+    <input type="number" id="quantidade20" min="1" max="50" value="1">
+    <button id="gerar-pedido20">Gerar Pedido</button>
+    <a id="link-pedido20" href="#" target="_blank">Pedido</a>
+  </div>
+  
+   <div class="cardapio">
+    <h2>Cheddar R$ 4,00</h2>
+    <input type="number" id="quantidade21" min="1" max="50" value="1">
+    <button id="gerar-pedido21">Gerar Pedido</button>
+    <a id="link-pedido21" href="#" target="_blank">Pedido</a>
+  </div>
+  
+   <div class="cardapio">
+    <h2>Catupiry R$ 3,50</h2>
+    <input type="number" id="quantidade22" min="1" max="50" value="1">
+    <button id="gerar-pedido22">Gerar Pedido</button>
+    <a id="link-pedido22" href="#" target="_blank">Pedido</a>
+  </div>
+  
+   <div class="cardapio">
+    <h2>Calabresa R$ 4,00</h2>
+    <input type="number" id="quantidade23" min="1" max="50" value="1">
+    <button id="gerar-pedido23">Gerar Pedido</button>
+    <a id="link-pedido23" href="#" target="_blank">Pedido</a>
+  </div>
+  
+   <div class="cardapio">
+    <h2>Queijo R$ 4,00</h2>
+    <input type="number" id="quantidade24" min="1" max="50" value="1">
+    <button id="gerar-pedido24">Gerar Pedido</button>
+    <a id="link-pedido24" href="#" target="_blank">Pedido</a>
+  </div>
+  
+   <div class="cardapio">
+    <h2>Ovo R$ 3,00</h2>
+    <input type="number" id="quantidade25" min="1" max="50" value="1">
+    <button id="gerar-pedido25">Gerar Pedido</button>
+    <a id="link-pedido25" href="#" target="_blank">Pedido</a>
+  </div>
+  
+   <div class="cardapio">
+    <h2>Hamburguer R$ 6,00</h2>
+    <input type="number" id="quantidade26" min="1" max="50" value="1">
+    <button id="gerar-pedido26">Gerar Pedido</button>
+    <a id="link-pedido26" href="#" target="_blank">Pedido</a>
+  </div>
+  
+   <div class="cardapio">
+    <h2>Maionese caseira R$ 2,50</h2>
+    <input type="number" id="quantidade27" min="1" max="50" value="1">
+    <button id="gerar-pedido27">Gerar Pedido</button>
+    <a id="link-pedido27" href="#" target="_blank">Pedido</a>
+  </div>
+  
+   <div class="cardapio">
+    <h2>Molho de alho R$ 3,00</h2>
+    <input type="number" id="quantidade28" min="1" max="50" value="1">
+    <button id="gerar-pedido28">Gerar Pedido</button>
+    <a id="link-pedido28" href="#" target="_blank">Pedido</a>
+  </div>
+  
+   <div class="tipo">
+  PORÇÕES
+  </div>
+  
+   <div class="cardapio">
+  
+    <h2>Batata frita pequena R$ 15,00</h2>
+    <input type="number" id="quantidade29" min="1" max="50" value="1">
+    <button id="gerar-pedido29">Gerar Pedido</button>
+    <a id="link-pedido29" href="#" target="_blank">Pedido</a>
+  </div>
+  
+   <div class="cardapio">
+    <h2>Batata frita grande R$ 20,00</h2>
+    <input type="number" id="quantidade30" min="1" max="50" value="1">
+    <button id="gerar-pedido30">Gerar Pedido</button>
+    <a id="link-pedido30" href="#" target="_blank">Pedido</a>
+  </div>
+  
+  
+  
+  <!-- Adicione mais cardápios aqui... -->
+  
+  <script>
+    // Cardápio 1 aqui eu coloco os links que vai em cada quantidade do cardapio
+    const quantidadeInput1 = document.getElementById('quantidade1');
+    const gerarPedidoButton1 = document.getElementById('gerar-pedido1');
+    const linkPedido1 = document.getElementById('link-pedido1');
+    const links1 = [
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+1+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+2+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+3+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+4+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+5+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+6+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+7+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+8+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+9+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+10+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+11+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+12+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+13+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+14+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+15+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+16+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+17+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+18+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+19+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+20+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+21+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+22+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+23+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+24+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+25+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+26+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+27+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+28+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+29+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+30+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+31+X+BURGUER.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+32+X+BURGUER.",
+      
+    ];
+    gerarPedidoButton1.addEventListener('click', () => {
+      const quantidade = quantidadeInput1.value;
+      const link = links1[quantidade - 1];
+      linkPedido1.href = link;
+      linkPedido1.click();
+    });
+    
+    // Cardápio 2
+    const quantidadeInput2 = document.getElementById('quantidade2');
+    const gerarPedidoButton2 = document.getElementById('gerar-pedido2');
+    const linkPedido2 = document.getElementById('link-pedido2');
+    const links2 = [
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+1+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+2+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+3+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+4+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+5+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+6+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+7+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+8+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+9+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+10+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+11+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+12+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+13+X+SALADA.",
+      
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+14+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+15+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+16+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+17+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+18+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+19+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+20+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+21+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+22+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+23+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+24+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+25+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+26+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+27+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+28+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+29+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+30+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+31+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+32+X+SALADA.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+33+X+SALADA.",
+      
+    ];
+    gerarPedidoButton2.addEventListener('click', () => {
+      const quantidade = quantidadeInput2.value;
+      const link = links2[quantidade - 1];
+      linkPedido2.href = link;
+      linkPedido2.click();
+    });
+    
+     const quantidadeInput3 = document.getElementById('quantidade3');
+    const gerarPedidoButton3 = document.getElementById('gerar-pedido3');
+    const linkPedido3 = document.getElementById('link-pedido3');
+    const links3 = [
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+1+X+EGG.",
+        "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+2+X+EGG.",
+          "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+3+X+EGG.",
+            "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+4+X+EGG.",
+              "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+5+X+EGG.",
+                "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+6+X+EGG.",
+                  "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+7+X+EGG.",
+                    "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+8+X+EGG.",
+                      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+9+X+EGG.",
+                        "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+10+X+EGG.",
+                          "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+11+X+EGG.",
+                            "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+12+X+EGG.",
+                              "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+13+X+EGG.",
+                              
+                                "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+14+X+EGG.",
+                                  "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+15+X+EGG.",
+                                    "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+16+X+EGG.",
+                                      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+17+X+EGG.",
+                                        "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+18+X+EGG.",
+                                          "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+19+X+EGG.",
+                                            "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+20+X+EGG.",
+                                              "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+21+X+EGG.",
+                                                "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+22+X+EGG.",
+                                                  "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+23+X+EGG.",
+                                                    "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+24+X+EGG.",
+                                                      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+25+X+EGG.",
+                                                        "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+26+X+EGG.",
+                                                          "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+28+X+EGG.",
+                                                            "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+29+X+EGG.",
+                                                              "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+30+X+EGG.",
+                                                                "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+31+X+EGG.",
+                                                                  "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+32+X+EGG.",
+                                                                    "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+33+X+EGG.",
+                                                                    
+     
+    
+    ];
+    gerarPedidoButton3.addEventListener('click', () => {
+      const quantidade = quantidadeInput3.value;
+      const link = links3[quantidade - 1];
+      linkPedido3.href = link;
+      linkPedido3.click();
+    });
+    
+     const quantidadeInput4 = document.getElementById('quantidade4');
+    const gerarPedidoButton4 = document.getElementById('gerar-pedido4');
+    const linkPedido4 = document.getElementById('link-pedido4');
+    const links4 = [
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+1+X+CALABRESA.",
+       "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+2+X+CALABRESA.",
+        "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+3+X+CALABRESA.",
+         "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+4+X+CALABRESA.",
+          "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+5+X+CALABRESA.",
+           "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+6+X+CALABRESA.",
+            "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+7+X+CALABRESA.",
+             "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+8+X+CALABRESA.",
+              "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+9+X+CALABRESA.",
+               "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+10+X+CALABRESA.",
+                "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+11+X+CALABRESA.",
+                 "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+12+X+CALABRESA.",
+                  "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+13+X+CALABRESA.",
+                   "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+14+X+CALABRESA.",
+                    "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+15+X+CALABRESA.",
+                     "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+16+X+CALABRESA.",
+                      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+17+X+CALABRESA.",
+                       "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+18+X+CALABRESA.",
+                        "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+19+X+CALABRESA.",
+                         "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+20+X+CALABRESA.",
+                          "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+21+X+CALABRESA.",
+                           "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+22+X+CALABRESA.",
+                            "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+23+X+CALABRESA.",
+                             "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+24+X+CALABRESA.",
+                              "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+25+X+CALABRESA.",
+                               "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+26+X+CALABRESA.",
+                                "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+27+X+CALABRESA.",
+                                 "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+28+X+CALABRESA.",
+                                  "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+29+X+CALABRESA.",
+                                   "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+30+X+CALABRESA.",
+                                    "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+31+X+CALABRESA.",
+                                     "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+32+X+CALABRESA.",
+                                      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+33+X+CALABRESA.",
+                                       "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+34+X+CALABRESA.",
+                                        "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+35+X+CALABRESA.",
+                                         "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+36+X+CALABRESA.",
+                                          "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+37+X+CALABRESA.",
+                                           "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+38+X+CALABRESA.",
+                                            "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+39+X+CALABRESA.",
+                                             "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+40+X+CALABRESA.",
+                                              "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+41+X+CALABRESA.",
+                                               "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+42+X+CALABRESA.",
+                                                "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+43+X+CALABRESA.",
+                                                 "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+44+X+CALABRESA.",
+                                                  "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+45+X+CALABRESA.",
+                                                   "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+46+X+CALABRESA.",
+                                                    "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+47+X+CALABRESA.",
+                                                     "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+48+X+CALABRESA.",
+                                                      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+49+X+CALABRESA.",
+                                                      
+     
+    ];
+    gerarPedidoButton4.addEventListener('click', () => {
+      const quantidade = quantidadeInput4.value;
+      const link = links4[quantidade - 1];
+      linkPedido4.href = link;
+      linkPedido4.click();
+    });
+    
+     const quantidadeInput5 = document.getElementById('quantidade5');
+    const gerarPedidoButton5 = document.getElementById('gerar-pedido5');
+    const linkPedido5 = document.getElementById('link-pedido5');
+    const links5 = [
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+1+X+BACON",
+       "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+2+X+BACON",
+        "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+3+X+BACON",
+         "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+4+X+BACON",
+          "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+5+X+BACON",
+           "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+6+X+BACON",
+            "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+7+X+BACON",
+             "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+8+X+BACON",
+              "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+9+X+BACON",
+               "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+10+X+BACON",
+                "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+11+X+BACON",
+                 "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+12+X+BACON",
+             
+                   "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+13+X+BACON",
+                    "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+14+X+BACON",
+                     "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+15+X+BACON",
+                      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+16+X+BACON",
+                       "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+17+X+BACON",
+                        "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+18+X+BACON",
+                         "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+19+X+BACON",
+                          "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+20+X+BACON",
+                           "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+21+X+BACON",
+                            "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+22+X+BACON",
+                             "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+23+X+BACON",
+                              "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+24+X+BACON",
+                               "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+25+X+BACON",
+                                "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+26+X+BACON",
+                                 "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+27+X+BACON",
+                                  "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+28+X+BACON",
+                                   "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+29+X+BACON",
+                          
+                                     "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+30+X+BACON",
+                                      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+31+X+BACON",
+               
+                                        "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+32+X+BACON",
+                                         "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+33+X+BACON",
+                                          "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+34+X+BACON",
+                                           "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+35+X+BACON",
+                                            "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+36+X+BACON",
+                                             "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+37+X+BACON",
+                                              "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+38+X+BACON",
+                                               "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+39+X+BACON",
+                                                "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+40+X+BACON",
+   "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+41+X+BACON",
+    "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+42+X+BACON",
+     "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+43+X+BACON",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+44+X+BACON",
+       "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+45+X+BACON",
+        "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+46+X+BACON",
+         "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+47+X+BACON",
+          "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+48+X+BACON",
+           "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+49+X+BACON",
+            "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+50+X+BACON",
+            
+                                               
+    
+    ];
+    gerarPedidoButton5.addEventListener('click', () => {
+      const quantidade = quantidadeInput5.value;
+      const link = links5[quantidade - 1];
+      linkPedido5.href = link;
+      linkPedido5.click();
+    });
+    
+     const quantidadeInput6 = document.getElementById('quantidade6');
+    const gerarPedidoButton6 = document.getElementById('gerar-pedido6');
+    const linkPedido6 = document.getElementById('link-pedido6');
+    const links6 = [
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+1+X+tudo.",
+        "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+2+X+tudo.",
+          "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+3+X+tudo.",
+            "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+4+X+tudo.",
+              "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+5+X+tudo.",
+                "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+6+X+tudo.",
+                  "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+7+X+tudo.",
+                    "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+8+X+tudo.",
+                      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+9+X+tudo.",
+                        "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+10+X+tudo.",
+                          "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+11+X+tudo.",
+                            "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+12+X+tudo.",
+                              "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+13+X+tudo.",
+                                "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+14+X+tudo.",
+                                  "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+15+X+tudo.",
+                                    "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+16+X+tudo.",
+                                      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+17+X+tudo.",
+                                        "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+18+X+tudo.",
+                                          "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+19+X+tudo.",
+                                            "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+20+X+tudo.",
+                                              "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+21+X+tudo.",
+                                           
+                                                  "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+22+X+tudo.",
+                                                    "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+23+X+tudo.",
+                                                      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+24+X+tudo.",
+                                                        "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+25+X+tudo.",
+                                                          "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+26+X+tudo.",
+                                                            "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+27+X+tudo.",
+                                                              "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+28+X+tudo.",
+                                                                "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+29+X+tudo.",
+                                                                  "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+30+X+tudo.",
+                                                                    "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+31+X+tudo.",
+                                                                      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+32+X+tudo.",
+                                                                        "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+33+X+tudo.",
+                                                                          "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+34+X+tudo.",
+                                                                            "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+35+X+tudo.",
+                                                                              "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+36+X+tudo.",
+                                                                                "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+37+X+tudo.",
+                                                                                  "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+38+X+tudo.",
+                                                                                    "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+39+X+tudo.",
+                                                                                      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+40+X+tudo.",
+                                                                                        "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+41+X+tudo.",
+                                                                                          "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+42+X+tudo.",
+                                                                                            "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+43+X+tudo.",
+                                                                                              "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+44+X+tudo.",
+                                                                                                "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+45+X+tudo.",
+                                                                                          
+                                                                                                    "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+46+X+tudo.",
+                                                                                                      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+47+X+tudo.",
+                                                                                                        "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+48+X+tudo.",
+                     "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+49+X+tudo.",
+                       "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+50+X+tudo.",
+    
+    ];
+    gerarPedidoButton6.addEventListener('click', () => {
+      const quantidade = quantidadeInput6.value;
+      const link = links6[quantidade - 1];
+      linkPedido6.href = link;
+      linkPedido6.click();
+    });
+    
+     const quantidadeInput7 = document.getElementById('quantidade7');
+    const gerarPedidoButton7 = document.getElementById('gerar-pedido7');
+    const linkPedido7 = document.getElementById('link-pedido7');
+    const links7 = [
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+1+GALINH%C3%83O.",
+       "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+2+GALINH%C3%83O.",
+          "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+3+GALINH%C3%83O.",
+             "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+4+GALINH%C3%83O.",
+                "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+5+GALINH%C3%83O.",
+                   "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+6+GALINH%C3%83O.",
+                      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+7+GALINH%C3%83O.",
+                         "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+8+GALINH%C3%83O.",
+                            "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+9+GALINH%C3%83O.",
+                               "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+10+GALINH%C3%83O.",
+                                  "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+11+GALINH%C3%83O.",
+                                     "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+12+GALINH%C3%83O.",
+                                        "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+13+GALINH%C3%83O.",
+                                           "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+14+GALINH%C3%83O.",
+                                              "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+15+GALINH%C3%83O.",
+                                                 "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+16+GALINH%C3%83O.",
+                                                    "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+17+GALINH%C3%83O.",
+                                                       "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+18+GALINH%C3%83O.",
+                                                          "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+19+GALINH%C3%83O.",
+                                                             "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+20+GALINH%C3%83O.",
+                                                                "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+21+GALINH%C3%83O.",
+                                                                   "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+22+GALINH%C3%83O.",
+                                                                      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+23+GALINH%C3%83O.",
+                                                                         "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+24+GALINH%C3%83O.",
+                                                                            "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+25+GALINH%C3%83O.",
+                                                                               "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+26+GALINH%C3%83O.",
+                                                                                  "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+27+GALINH%C3%83O.",
+                                                                                     "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+28+GALINH%C3%83O.",
+                                                                                        "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+29+GALINH%C3%83O.",
+                                                                                           "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+30+GALINH%C3%83O.",
+                                                                                              "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+31+GALINH%C3%83O.",
+                                                                                                 "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+32+GALINH%C3%83O.",
+                                                                                                    "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+33+GALINH%C3%83O.",
+                                                                                                       "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+34+GALINH%C3%83O.",
+                                                                                                          "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+35+GALINH%C3%83O.",
+                                                                                                             "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+36+GALINH%C3%83O.",
+                                                                                                                "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+37+GALINH%C3%83O.",
+                                                                                                                   "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+38+GALINH%C3%83O.",
+                                                                                                                      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+39+GALINH%C3%83O.",
+                                                                                                                         "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+40+GALINH%C3%83O.",
+                                                                                                                            "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+41+GALINH%C3%83O.",
+                                                                                                                               "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+42+GALINH%C3%83O.",
+                                                                                                                                  "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+43+GALINH%C3%83O.",
+                                                                                                                                     "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+44+GALINH%C3%83O.",
+                                                                                                                                        "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+45+GALINH%C3%83O.",
+                                                                                                                                           "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+46+GALINH%C3%83O.",
+                                                                                                                                              "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+47+GALINH%C3%83O.",
+                                                                                                                                                 "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+48+GALINH%C3%83O.",
+                                                                                                                                                    "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+49+GALINH%C3%83O.",
+                                                                                                                                                       "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+50+GALINH%C3%83O.",
+                                                                                                                                                       
+     
+    ];
+    gerarPedidoButton7.addEventListener('click', () => {
+      const quantidade = quantidadeInput7.value;
+      const link = links7[quantidade - 1];
+      linkPedido7.href = link;
+      linkPedido7.click();
+    });
+    
+     const quantidadeInput8 = document.getElementById('quantidade8');
+    const gerarPedidoButton8 = document.getElementById('gerar-pedido8');
+    const linkPedido8 = document.getElementById('link-pedido8');
+    const links8 = [
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+1+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+2+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+3+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+4+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+5+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+6+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+7+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+8+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+9+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+10+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+11+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+12+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+13+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+14+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+15+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+16+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+17+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+18+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+19+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+20+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+21+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+22+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+23+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+24+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+25+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+26+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+27+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+28+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+29+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+30+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+31+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+32+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+33+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+34+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+35+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+36+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+37+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+38+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+39+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+40+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+41+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+42+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+43+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+44+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+45+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+46+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+47+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+48+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+49+BACON+CHEDDAR.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+50+BACON+CHEDDAR.",
+      
+    ];
+    gerarPedidoButton8.addEventListener('click', () => {
+      const quantidade = quantidadeInput8.value;
+      const link = links8[quantidade - 1];
+      linkPedido8.href = link;
+      linkPedido8.click();
+    });
+    
+     const quantidadeInput9 = document.getElementById('quantidade9');
+    const gerarPedidoButton9 = document.getElementById('gerar-pedido9');
+    const linkPedido9 = document.getElementById('link-pedido9');
+    const links9 = [
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+1+X+VIT%C3%93RIA.",
+       "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+2+X+VIT%C3%93RIA.",
+        "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+3+X+VIT%C3%93RIA.",
+         "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+4+X+VIT%C3%93RIA.",
+          "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+5+X+VIT%C3%93RIA.",
+           "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+6+X+VIT%C3%93RIA.",
+            "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+7+X+VIT%C3%93RIA.",
+             "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+8+X+VIT%C3%93RIA.",
+              "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+9+X+VIT%C3%93RIA.",
+               "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+10+X+VIT%C3%93RIA.",
+                "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+11+X+VIT%C3%93RIA.",
+                 "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+12+X+VIT%C3%93RIA.",
+                  "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+13+X+VIT%C3%93RIA.",
+                   "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+14+X+VIT%C3%93RIA.",
+                    "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+15+X+VIT%C3%93RIA.",
+                     "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+16+X+VIT%C3%93RIA.",
+                      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+17+X+VIT%C3%93RIA.",
+                       "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+18+X+VIT%C3%93RIA.",
+                        "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+19+X+VIT%C3%93RIA.",
+                         "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+20+X+VIT%C3%93RIA.",
+                          "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+21+X+VIT%C3%93RIA.",
+                           "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+22+X+VIT%C3%93RIA.",
+                            "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+23+X+VIT%C3%93RIA.",
+                             "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+24+X+VIT%C3%93RIA.",
+                              "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+25+X+VIT%C3%93RIA.",
+                               "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+26+X+VIT%C3%93RIA.",
+                                "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+27+X+VIT%C3%93RIA.",
+                                 "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+28+X+VIT%C3%93RIA.",
+                                  "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+29+X+VIT%C3%93RIA.",
+                                   "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+30+X+VIT%C3%93RIA.",
+                                    "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+31+X+VIT%C3%93RIA.",
+                                     "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+32+X+VIT%C3%93RIA.",
+                                      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+33+X+VIT%C3%93RIA.",
+                                       "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+34+X+VIT%C3%93RIA.",
+                                        "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+35+X+VIT%C3%93RIA.",
+                                         "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+36+X+VIT%C3%93RIA.",
+                                          "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+37+X+VIT%C3%93RIA.",
+                                           "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+38+X+VIT%C3%93RIA.",
+                                            "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+39+X+VIT%C3%93RIA.",
+                                             "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+40+X+VIT%C3%93RIA.",
+                                              "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+41+X+VIT%C3%93RIA.",
+                                               "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+42+X+VIT%C3%93RIA.",
+                                                "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+43+X+VIT%C3%93RIA.",
+                                                 "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+44+X+VIT%C3%93RIA.",
+                                                  "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+45+X+VIT%C3%93RIA.",
+                                                   "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+46+X+VIT%C3%93RIA.",
+                                                    "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+47+X+VIT%C3%93RIA.",
+                                                     "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+48+X+VIT%C3%93RIA.",
+                                                      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+49+X+VIT%C3%93RIA.",
+                                                       "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+50+X+VIT%C3%93RIA.",
+      
+    ];
+    gerarPedidoButton9.addEventListener('click', () => {
+      const quantidade = quantidadeInput9.value;
+      const link = links9[quantidade - 1];
+      linkPedido9.href = link;
+      linkPedido9.click();
+    });
+    
+     const quantidadeInput10 = document.getElementById('quantidade10');
+    const gerarPedidoButton10 = document.getElementById('gerar-pedido10');
+    const linkPedido10 = document.getElementById('link-pedido10');
+    const links10 = [
+      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+1+X+ONIONS.",
+       "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+2+X+ONIONS.",
+        "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+3+X+ONIONS.",
+         "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+4+X+ONIONS.",
+          "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+5+X+ONIONS.",
+           "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+6+X+ONIONS.",
+            "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+7+X+ONIONS.",
+             "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+8+X+ONIONS.",
+              "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+9+X+ONIONS.",
+               "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+10+X+ONIONS.",
+                "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+11+X+ONIONS.",
+                 "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+12+X+ONIONS.",
+                  "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+13+X+ONIONS.",
+                   "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+14+X+ONIONS.",
+                    "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+15+X+ONIONS.",
+                     "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+16+X+ONIONS.",
+                      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+17+X+ONIONS.",
+                       "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+18+X+ONIONS.",
+                        "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+19+X+ONIONS.",
+                         "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+20+X+ONIONS.",
+                          "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+21+X+ONIONS.",
+                           "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+22+X+ONIONS.",
+                            "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+23+X+ONIONS.",
+                             "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+24+X+ONIONS.",
+                              "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+25+X+ONIONS.",
+                               "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+26+X+ONIONS.",
+                                "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+27+X+ONIONS.",
+                                 "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+28+X+ONIONS.",
+                                  "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+29+X+ONIONS.",
+                                   "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+30+X+ONIONS.",
+                                    "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+31+X+ONIONS.",
+                                     "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+32+X+ONIONS.",
+                                      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+33+X+ONIONS.",
+                                       "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+34+X+ONIONS.",
+                                        "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+35+X+ONIONS.",
+                                         "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+36+X+ONIONS.",
+                                          "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+37+X+ONIONS.",
+                                           "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+38+X+ONIONS.",
+                                            "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+39+X+ONIONS.",
+                                             "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+40+X+ONIONS.",
+                                              "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+41+X+ONIONS.",
+                                               "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+42+X+ONIONS.",
+                                                "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+43+X+ONIONS.",
+                                                 "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+44+X+ONIONS.",
+                                                  "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+45+X+ONIONS.",
+                                                   "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+46+X+ONIONS.",
+                                                    "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+1+X+ONIONS.",
+                                                     "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+47+X+ONIONS.",
+                                                      "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+48+X+ONIONS.",
+                                                       "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+49+X+ONIONS.",
+       "https://api.whatsapp.com/send?phone=5511944502708&text=ol%C3%A1,+gostaria+de+pedir+50+X+ONIONS.",
+    ];
+    gerarPedidoButton10.addEventListener('click', () => {
+      const quantidade = quantidadeInput10.value;
+      const link = links10[quantidade - 1];
+      linkPedido10.href = link;
+      linkPedido10.click();
+    });
+    
+     const quantidadeInput11 = document.getElementById('quantidade11');
+    const gerarPedidoButton11 = document.getElementById('gerar-pedido11');
+    const linkPedido11 = document.getElementById('link-pedido11');
+    const links11 = [
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+1+hot+dog+simples.",
+       "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+2+hot+dog+simples.",
+        "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+3+hot+dog+simples.",
+         "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+4+hot+dog+simples.",
+          "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+5+hot+dog+simples.",
+           "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+6+hot+dog+simples.",
+            "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+7+hot+dog+simples.",
+             "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+8+hot+dog+simples.",
+              "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+9+hot+dog+simples.",
+               "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+10+hot+dog+simples.",
+                "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+11+hot+dog+simples.",
+                 "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+12+hot+dog+simples.",
+                  "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+13+hot+dog+simples.",
+                   "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+14+hot+dog+simples.",
+                    "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+15+hot+dog+simples.",
+                     "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+16+hot+dog+simples.",
+                      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+17+hot+dog+simples.",
+                       "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+18+hot+dog+simples.",
+                        "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+19+hot+dog+simples.",
+                         "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+20+hot+dog+simples.",
+                          "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+21+hot+dog+simples.",
+                           "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+22+hot+dog+simples.",
+                            "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+23+hot+dog+simples.",
+                             "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+24+hot+dog+simples.",
+                              "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+25+hot+dog+simples.",
+                               "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+26+hot+dog+simples.",
+                                "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+27+hot+dog+simples.",
+                                 "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+28+hot+dog+simples.",
+                                  "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+29+hot+dog+simples.",
+                                   "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+30+hot+dog+simples.",
+                                    "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+31+hot+dog+simples.",
+                                     "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+32+hot+dog+simples.",
+                                      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+33+hot+dog+simples.",
+                                       "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+34+hot+dog+simples.",
+                                        "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+35+hot+dog+simples.",
+                                         "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+36+hot+dog+simples.",
+                                          "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+1+hot+dog+simples.",
+                                           "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+1+hot+dog+simples.",
+                                            "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+37+hot+dog+simples.",
+                                             "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+38+hot+dog+simples.",
+                                              "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+39+hot+dog+simples.",
+                                               "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+40+hot+dog+simples.",
+                                                "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+41+hot+dog+simples.",
+                                                 "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+42+hot+dog+simples.",
+                                                  "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+43+hot+dog+simples.",
+                                                   "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+44+hot+dog+simples.",
+                                                    "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+45+hot+dog+simples.",
+                                                     "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+46+hot+dog+simples.",
+                                                      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+47+hot+dog+simples.",
+                                                       "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+48+hot+dog+simples.",
+                                                        "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+49+hot+dog+simples.",
+                                                         "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+50+hot+dog+simples.",
+                                                       
+     
+    ];
+    gerarPedidoButton11.addEventListener('click', () => {
+      const quantidade = quantidadeInput11.value;
+      const link = links11[quantidade - 1];
+      linkPedido11.href = link;
+      linkPedido11.click();
+    });
+    
+     const quantidadeInput12 = document.getElementById('quantidade12');
+    const gerarPedidoButton12 = document.getElementById('gerar-pedido12');
+    const linkPedido12 = document.getElementById('link-pedido12');
+    const links12 = [
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+1+hot+dog+completo.",
+       "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+2+hot+dog+completo.",
+        "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+3+hot+dog+completo.",
+         "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+4+hot+dog+completo.",
+          "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+5+hot+dog+completo.",
+           "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+6+hot+dog+completo.",
+            "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+7+hot+dog+completo.",
+             "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+8+hot+dog+completo.",
+              "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+9+hot+dog+completo.",
+               "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+10+hot+dog+completo.",
+                "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+11+hot+dog+completo.",
+                 "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+12+hot+dog+completo.",
+                  "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+13+hot+dog+completo.",
+                   "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+14+hot+dog+completo.",
+                    "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+15+hot+dog+completo.",
+                     "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+16+hot+dog+completo.",
+                      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+17+hot+dog+completo.",
+                       "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+18+hot+dog+completo.",
+                        "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+19+hot+dog+completo.",
+                         "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+20+hot+dog+completo.",
+                          "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+21+hot+dog+completo.",
+                           "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+22+hot+dog+completo.",
+                            "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+23+hot+dog+completo.",
+                             "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+24+hot+dog+completo.",
+                              "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+25+hot+dog+completo.",
+                               "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+26+hot+dog+completo.",
+                                "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+27+hot+dog+completo.",
+                                 "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+28+hot+dog+completo.",
+                                  "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+29+hot+dog+completo.",
+                                   "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+30+hot+dog+completo.",
+                                    "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+31+hot+dog+completo.",
+                                     "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+32+hot+dog+completo.",
+                                      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+33+hot+dog+completo.",
+                                       "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+34+hot+dog+completo.",
+                                        "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+35+hot+dog+completo.",
+                                         "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+36+hot+dog+completo.",
+                                          "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+37+hot+dog+completo.",
+                                           "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+38+hot+dog+completo.",
+                                            "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+39+hot+dog+completo.",
+                                             "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+40+hot+dog+completo.",
+                                              "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+41+hot+dog+completo.",
+                                               "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+42+hot+dog+completo.",
+                                                "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+43+hot+dog+completo.",
+                                                 "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+44+hot+dog+completo.",
+                                                  "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+45+hot+dog+completo.",
+                                                   "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+46+hot+dog+completo.",
+                                                    "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+47+hot+dog+completo.",
+                                                     "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+48+hot+dog+completo.",
+                                                      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+49+hot+dog+completo.",
+                                                       "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+50+hot+dog+completo.",
+                                                       
+      
+    ];
+    gerarPedidoButton12.addEventListener('click', () => {
+      const quantidade = quantidadeInput12.value;
+      const link = links12[quantidade - 1];
+      linkPedido12.href = link;
+      linkPedido12.click();
+    });
+    
+     const quantidadeInput13 = document.getElementById('quantidade13');
+    const gerarPedidoButton13 = document.getElementById('gerar-pedido13');
+    const linkPedido13 = document.getElementById('link-pedido13');
+    const links13 = [
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+1+cerveja+lata.",
+        "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+2+cerveja+lata.",
+          "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+3+cerveja+lata.",
+            "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+4+cerveja+lata.",
+              "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+5+cerveja+lata.",
+                "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+6+cerveja+lata.",
+                  "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+7+cerveja+lata.",
+                    "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+8+cerveja+lata.",
+                      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+9+cerveja+lata.",
+                        "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+10+cerveja+lata.",
+                          "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+11+cerveja+lata.",
+                            "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+12+cerveja+lata.",
+                              "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+13+cerveja+lata.",
+                                "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+14+cerveja+lata.",
+                                  "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+15+cerveja+lata.",
+                                    "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+16+cerveja+lata.",
+                                      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+17+cerveja+lata.",
+                                        "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+18+cerveja+lata.",
+                                          "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+19+cerveja+lata.",
+                                            "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+20+cerveja+lata.",
+                                              "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+21+cerveja+lata.",
+                                                "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+22+cerveja+lata.",
+                                                  "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+23+cerveja+lata.",
+                                                    "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+24+cerveja+lata.",
+                                                      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+25+cerveja+lata.",
+                                                        "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+26+cerveja+lata.",
+                                                          "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+27+cerveja+lata.",
+                                                            "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+28+cerveja+lata.",
+                                                              "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+29+cerveja+lata.",
+                                                                "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+30+cerveja+lata.",
+                                                                  "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+31+cerveja+lata.",
+                                                                    "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+32+cerveja+lata.",
+                                                                      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+33+cerveja+lata.",
+                                                                        "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+34+cerveja+lata.",
+                                                                          "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+35+cerveja+lata.",
+                                                                            "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+36+cerveja+lata.",
+                                                                              "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+37+cerveja+lata.",
+                                                                                "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+38+cerveja+lata.",
+                                                                                  "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+39+cerveja+lata.",
+                                                                                    "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+40+cerveja+lata.",
+                                                                                      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+41+cerveja+lata.",
+                                                                                        "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+42+cerveja+lata.",
+                                                                                          "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+43+cerveja+lata.",
+                                                                                            "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+44+cerveja+lata.",
+                                                                                              "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+45+cerveja+lata.",
+                                                                                                "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+46+cerveja+lata.",
+                                                                                                  "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+47+cerveja+lata.",
+                                                                                                    "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+48+cerveja+lata.",
+                                                                                                      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+49+cerveja+lata.",
+                                                                                                        "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+50+cerveja+lata.",
+      
+    ];
+    gerarPedidoButton13.addEventListener('click', () => {
+      const quantidade = quantidadeInput13.value;
+      const link = links13[quantidade - 1];
+      linkPedido13.href = link;
+      linkPedido13.click();
+    });
+    
+     const quantidadeInput14 = document.getElementById('quantidade14');
+    const gerarPedidoButton14 = document.getElementById('gerar-pedido14');
+    const linkPedido14 = document.getElementById('link-pedido14');
+    const links14 = [
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+1+heineken+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+2+heineken+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+3+heineken+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+4+heineken+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+5+heineken+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+6+heineken+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+7+heineken+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+8+heineken+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+9+heineken+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+10+heineken+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+11+heineken+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+12+heineken+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+13+heineken+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+14+heineken+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+15+heineken+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+16+heineken+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+17+heineken+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+18+heineken+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+19+heineken+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+20+heineken+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+21+heineken+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+22+heineken+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+23+heineken+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+24+heineken+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+25+heineken+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+26+heineken+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+27+heineken+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+28+heineken+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+29+heineken+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+30+heineken+lata.",
+      
+     
+    ];
+    gerarPedidoButton14.addEventListener('click', () => {
+      const quantidade = quantidadeInput14.value;
+      const link = links14[quantidade - 1];
+      linkPedido14.href = link;
+      linkPedido14.click();
+    });
+    
+     const quantidadeInput15 = document.getElementById('quantidade15');
+    const gerarPedidoButton15 = document.getElementById('gerar-pedido15');
+    const linkPedido15 = document.getElementById('link-pedido15');
+    const links15 = [
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+1+coca+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+2+coca+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+3+coca+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+4+coca+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+5+coca+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+6+coca+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+7+coca+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+8+coca+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+9+coca+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+10+coca+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+11+coca+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+12+coca+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+13+coca+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+14+coca+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+15+coca+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+16+coca+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+17+coca+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+18+coca+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+19+coca+lata.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+20+coca+lata.",
+     
+    ];
+    gerarPedidoButton15.addEventListener('click', () => {
+      const quantidade = quantidadeInput15.value;
+      const link = links15[quantidade - 1];
+      linkPedido15.href = link;
+      linkPedido15.click();
+    });
+    
+     const quantidadeInput16 = document.getElementById('quantidade16');
+    const gerarPedidoButton16 = document.getElementById('gerar-pedido16');
+    const linkPedido16 = document.getElementById('link-pedido16');
+    const links16 = [
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+1+fanta+lata.",
+        "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+2+fanta+lata.",
+          "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+3+fanta+lata.",
+            "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+4+fanta+lata.",
+              "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+5+fanta+lata.",
+                "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+6+fanta+lata.",
+                  "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+7+fanta+lata.",
+                    "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+8+fanta+lata.",
+                      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+9+fanta+lata.",
+                        "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+10+fanta+lata.",
+                          "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+11+fanta+lata.",
+                            "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+12+fanta+lata.",
+                              "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+13+fanta+lata.",
+                                "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+14+fanta+lata.",
+                                  "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+15+fanta+lata.",
+                                    "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+16+fanta+lata.",
+                                      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+17+fanta+lata.",
+                                        "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+18+fanta+lata.",
+                                          "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+19+fanta+lata.",
+                                            "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+20+fanta+lata.",
+                                            
+      
+    ];
+    gerarPedidoButton16.addEventListener('click', () => {
+      const quantidade = quantidadeInput16.value;
+      const link = links16[quantidade - 1];
+      linkPedido16.href = link;
+      linkPedido16.click();
+    });
+    
+     const quantidadeInput17 = document.getElementById('quantidade17');
+    const gerarPedidoButton17 = document.getElementById('gerar-pedido17');
+    const linkPedido17 = document.getElementById('link-pedido17');
+    const links17 = [
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+1+sprite+lata.",
+         "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+2+sprite+lata.",
+            "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+3+sprite+lata.",
+               "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+4+sprite+lata.",
+                  "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+5+sprite+lata.",
+                     "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+6+sprite+lata.",
+                        "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+7+sprite+lata.",
+                           "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+8+sprite+lata.",
+                              "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+9+sprite+lata.",
+                                 "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+10+sprite+lata.",
+                                    "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+11+sprite+lata.",
+                                       "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+12+sprite+lata.",
+                                          "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+13+sprite+lata.",
+                                             "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+14+sprite+lata.",
+   
+                                                   "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+15+sprite+lata.",
+                                                      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+16+sprite+lata.",
+                                                         "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+17+sprite+lata.",
+                                                            "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+18+sprite+lata.",
+                                                               "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+19+sprite+lata.",
+                                                                  "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+20+sprite+lata.",
+                                                                  
+     
+    ];
+    gerarPedidoButton17.addEventListener('click', () => {
+      const quantidade = quantidadeInput17.value;
+      const link = links17[quantidade - 1];
+      linkPedido17.href = link;
+      linkPedido17.click();
+    });
+    
+     const quantidadeInput18 = document.getElementById('quantidade18');
+    const gerarPedidoButton18 = document.getElementById('gerar-pedido18');
+    const linkPedido18 = document.getElementById('link-pedido18');
+    const links18 = [
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+1+refrigerante+de+2lts.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+2+refrigerante+de+2lts.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+3+refrigerante+de+2lts.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+4+refrigerante+de+2lts.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+5+refrigerante+de+2lts.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+6+refrigerante+de+2lts.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+7+refrigerante+de+2lts.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+8+refrigerante+de+2lts.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+9+refrigerante+de+2lts.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+10+refrigerante+de+2lts.",
+      
+     
+    ];
+    gerarPedidoButton18.addEventListener('click', () => {
+      const quantidade = quantidadeInput18.value;
+      const link = links18[quantidade - 1];
+      linkPedido18.href = link;
+      linkPedido18.click();
+    });
+    
+     const quantidadeInput19 = document.getElementById('quantidade19');
+    const gerarPedidoButton19 = document.getElementById('gerar-pedido19');
+    const linkPedido19 = document.getElementById('link-pedido19');
+    const links19 = [
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+1+%C3%A1gua.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+2+%C3%A1gua.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+3+%C3%A1gua.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+4+%C3%A1gua.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+5+%C3%A1gua.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+6+%C3%A1gua.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+7+%C3%A1gua.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+8+%C3%A1gua.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+9+%C3%A1gua.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+10+%C3%A1gua.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+11+%C3%A1gua.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+12+%C3%A1gua.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+13+%C3%A1gua.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+14+%C3%A1gua.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+15+%C3%A1gua.",
+      
+      
+    ];
+    gerarPedidoButton19.addEventListener('click', () => {
+      const quantidade = quantidadeInput19.value;
+      const link = links19[quantidade - 1];
+      linkPedido19.href = link;
+      linkPedido19.click();
+    });
+    
+     const quantidadeInput20 = document.getElementById('quantidade20');
+    const gerarPedidoButton20 = document.getElementById('gerar-pedido20');
+    const linkPedido20 = document.getElementById('link-pedido20');
+    const links20 = [
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+1+adicional+bacon.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+2+adicional+bacon.",
+        "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+3+adicional+bacon.",
+          "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+4+adicional+bacon.",
+            "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+5+adicional+bacon.",
+              "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+6+adicional+bacon.",
+                "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+7+adicional+bacon.",
+                  "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+8+adicional+bacon.",
+                    "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+9+adicional+bacon.",
+                      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+10+adicional+bacon.",
+                        "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+11+adicional+bacon.",
+                          "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+12+adicional+bacon.",
+                            "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+13+adicional+bacon.",
+                              "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+14+adicional+bacon.",
+                                "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+15+adicional+bacon.",
+                                  "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+16+adicional+bacon.",
+                                    "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+17+adicional+bacon.",
+                                      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+18+adicional+bacon.",
+                                        "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+19+adicional+bacon.",
+                                          "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+20+adicional+bacon.",
+                                            "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+21+adicional+bacon.",
+                                              "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+1+adicional+bacon.",
+                                                "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+22+adicional+bacon.",
+                                                  "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+23+adicional+bacon.",
+                                                    "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+24+adicional+bacon.",
+                                                      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+25+adicional+bacon.",
+                                                        "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+26+adicional+bacon.",
+                                                          "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+27+adicional+bacon.",
+                                                            "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+28+adicional+bacon.",
+                                                              "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+29+adicional+bacon.",
+                                                                "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+30+adicional+bacon.",
+                                                                  "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+31+adicional+bacon.",
+                                                                    "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+32+adicional+bacon.",
+                                                                      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+33+adicional+bacon.",
+                                                                        "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+34+adicional+bacon.",
+                                                                          "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+35+adicional+bacon.",
+                                                                            "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+36+adicional+bacon.",
+                                                                              "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+37+adicional+bacon.",
+                                                                                "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+38+adicional+bacon.",
+                                                                                  "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+39+adicional+bacon.",
+                                                                                    "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+40+adicional+bacon.",
+                                                                                      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+41+adicional+bacon.",
+                                                                                        "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+42+adicional+bacon.",
+                                                                                          "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+43+adicional+bacon.",
+                                                                                            "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+44+adicional+bacon.",
+                                                                                              "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+45+adicional+bacon.",
+                                                                                                "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+46+adicional+bacon.",
+                                                                                                  "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+47+adicional+bacon.",
+                                                                                                    "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+48+adicional+bacon.",
+                                                                                                      "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+49+adicional+bacon.",
+                "https://api.whatsapp.com/send?phone=5511944502708&text=Ol%C3%A1,+gostaria+de+pedir+50+adicional+bacon.",                                                                                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ];
+    gerarPedidoButton20.addEventListener('click', () => {
+      const quantidade = quantidadeInput20.value;
+      const link = links20[quantidade - 1];
+      linkPedido20.href = link;
+      linkPedido20.click();
+    });
+    
+     const quantidadeInput21 = document.getElementById('quantidade21');
+    const gerarPedidoButton21 = document.getElementById('gerar-pedido21');
+    const linkPedido21 = document.getElementById('link-pedido21');
+    const links21 = [
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+1+adicional+cheddar.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+2+adicional+cheddar.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+3+adicional+cheddar.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+4+adicional+cheddar.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+5+adicional+cheddar.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+6+adicional+cheddar.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+7+adicional+cheddar.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+8+adicional+cheddar.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+9+adicional+cheddar.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+10+adicional+cheddar.",
+      
+     
+    ];
+    gerarPedidoButton21.addEventListener('click', () => {
+      const quantidade = quantidadeInput21.value;
+      const link = links21[quantidade - 1];
+      linkPedido21.href = link;
+      linkPedido21.click();
+    });
+    
+     const quantidadeInput22 = document.getElementById('quantidade22');
+    const gerarPedidoButton22 = document.getElementById('gerar-pedido22');
+    const linkPedido22 = document.getElementById('link-pedido22');
+    const links22 = [
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+1+adicional+catupiry.",
+         "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+2+adicional+catupiry.",
+            "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+3+adicional+catupiry.",
+               "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+4+adicional+catupiry.",
+                  "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+5+adicional+catupiry.",
+                     "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+6+adicional+catupiry.",
+                        "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+7+adicional+catupiry.",
+                           "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+8+adicional+catupiry.",
+                              "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+9+adicional+catupiry.",
+                                 "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+10+adicional+catupiry.",
+                                 
+      
+    ];
+    gerarPedidoButton22.addEventListener('click', () => {
+      const quantidade = quantidadeInput22.value;
+      const link = links22[quantidade - 1];
+      linkPedido22.href = link;
+      linkPedido22.click();
+    });
+    
+     const quantidadeInput23 = document.getElementById('quantidade23');
+    const gerarPedidoButton23 = document.getElementById('gerar-pedido23');
+    const linkPedido23 = document.getElementById('link-pedido23');
+    const links23 = [
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+1+adicional+calabresa.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+2+adicional+calabresa.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+3+adicional+calabresa.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+4+adicional+calabresa.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+5+adicional+calabresa.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+6+adicional+calabresa.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+7+adicional+calabresa.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+8+adicional+calabresa.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+9+adicional+calabresa.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+10+adicional+calabresa.",
+      
+     
+    ];
+    gerarPedidoButton23.addEventListener('click', () => {
+      const quantidade = quantidadeInput23.value;
+      const link = links23[quantidade - 1];
+      linkPedido23.href = link;
+      linkPedido23.click();
+    });
+    
+     const quantidadeInput24 = document.getElementById('quantidade24');
+    const gerarPedidoButton24 = document.getElementById('gerar-pedido24');
+    const linkPedido24 = document.getElementById('link-pedido24');
+    const links24 = [
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+1+adicional+queijo.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+2+adicional+queijo.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+3+adicional+queijo.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+4+adicional+queijo.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+5+adicional+queijo.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+6+adicional+queijo.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+7+adicional+queijo.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+8+adicional+queijo.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+9+adicional+queijo.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+10+adicional+queijo.",
+      
+      
+    ];
+    gerarPedidoButton24.addEventListener('click', () => {
+      const quantidade = quantidadeInput24.value;
+      const link = links24[quantidade - 1];
+      linkPedido24.href = link;
+      linkPedido24.click();
+    });
+    
+     const quantidadeInput25 = document.getElementById('quantidade25');
+    const gerarPedidoButton25 = document.getElementById('gerar-pedido25');
+    const linkPedido25 = document.getElementById('link-pedido25');
+    const links25 = [
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+1+adicional+ovo.",
+        "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+2+adicional+ovos.",
+          "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+3+adicional+ovos.",
+            "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+4+adicional+ovos.",
+              "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+5+adicional+ovos.",
+                "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+6+adicional+ovos.",
+                  "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+7+adicional+ovos.",
+                    "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+8+adicional+ovos.",
+                      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+9+adicional+ovos.",
+                        "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+10+adicional+ovos.",
+                        
+      
+    ];
+    gerarPedidoButton25.addEventListener('click', () => {
+      const quantidade = quantidadeInput25.value;
+      const link = links25[quantidade - 1];
+      linkPedido25.href = link;
+      linkPedido25.click();
+    });
+    
+    
+     const quantidadeInput26 = document.getElementById('quantidade26');
+    const gerarPedidoButton26 = document.getElementById('gerar-pedido26');
+    const linkPedido26 = document.getElementById('link-pedido26');
+    const links26 = [
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+1+adicional+hamburguer.",
+       "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+2+adicional+hamburguer.",
+        "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+3+adicional+hamburguer.",
+         "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+4+adicional+hamburguer.",
+          "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+5+adicional+hamburguer.",
+           "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+6+adicional+hamburguer.",
+            "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+7+adicional+hamburguer.",
+             "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+8+adicional+hamburguer.",
+              "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+9+adicional+hamburguer.",
+               "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+10+adicional+hamburguer.",
+               
+     
+    ];
+    gerarPedidoButton26.addEventListener('click', () => {
+      const quantidade = quantidadeInput26.value;
+      const link = links26[quantidade - 1];
+      linkPedido26.href = link;
+      linkPedido26.click();
+    });
+    
+    
+     const quantidadeInput27 = document.getElementById('quantidade27');
+    const gerarPedidoButton27 = document.getElementById('gerar-pedido27');
+    const linkPedido27 = document.getElementById('link-pedido27');
+    const links27 = [
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+1+maionese+caseira+adicional.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+2+maionese+caseira+adicional.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+3+maionese+caseira+adicional.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+4+maionese+caseira+adicional.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+5+maionese+caseira+adicional.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+6+maionese+caseira+adicional.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+7+maionese+caseira+adicional.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+8+maionese+caseira+adicional.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+9+maionese+caseira+adicional.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+10+maionese+caseira+adicional.",
+      
+      
+    ];
+    gerarPedidoButton27.addEventListener('click', () => {
+      const quantidade = quantidadeInput27.value;
+      const link = links27[quantidade - 1];
+      linkPedido27.href = link;
+      linkPedido27.click();
+    });
+    
+    
+     const quantidadeInput28 = document.getElementById('quantidade28');
+    const gerarPedidoButton28 = document.getElementById('gerar-pedido28');
+    const linkPedido28 = document.getElementById('link-pedido28');
+    const links28 = [
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+1+molho+de+alho+adicional+caseiro.",
+     
+    
+     
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+2+molho+de+alho+adicional+caseiro.",
+     
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+3+molho+de+alho+adicional+caseiro.",
+     
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+4+molho+de+alho+adicional+caseiro.",
+     
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+5+molho+de+alho+adicional+caseiro.",
+     
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+6+molho+de+alho+adicional+caseiro.",
+     
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+7+molho+de+alho+adicional+caseiro.",
+     
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+8+molho+de+alho+adicional+caseiro.",
+     
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+9+molho+de+alho+adicional+caseiro.",
+     
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+10+molho+de+alho+adicional+caseiro.",
+     
+     
+    ];
+    gerarPedidoButton28.addEventListener('click', () => {
+      const quantidade = quantidadeInput28.value;
+      const link = links28[quantidade - 1];
+      linkPedido28.href = link;
+      linkPedido28.click();
+    });
+    
+    
+     const quantidadeInput29 = document.getElementById('quantidade29');
+    const gerarPedidoButton29 = document.getElementById('gerar-pedido29');
+    const linkPedido29 = document.getElementById('link-pedido29');
+    const links29 = [
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+1+batata+frita+pequena.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+2+batata+frita+pequena.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+3+batata+frita+pequena.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+4+batata+frita+pequena.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+5+batata+frita+pequena.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+6+batata+frita+pequena.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+7+batata+frita+pequena.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+8+batata+frita+pequena.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+9+batata+frita+pequena.",
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+10+batata+frita+pequena.",
+      
+      
+    ];
+    gerarPedidoButton30.addEventListener('click', () => {
+      const quantidade = quantidadeInput30.value;
+      const link = links30[quantidade - 1];
+      linkPedido30.href = link;
+      linkPedido30.click();
+    });
+    
+     
+     const quantidadeInput30 = document.getElementById('quantidade30');
+    const gerarPedidoButton30 = document.getElementById('gerar-pedido30');
+    const linkPedido30 = document.getElementById('link-pedido30');
+    const links30 = [
+      
+      "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+1+batata+frita+grande.",
+       "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+2+batata+frita+grande.",
+        "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+3+batata+frita+grande.",
+         "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+4+batata+frita+grande.",
+          "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+5+batata+frita+grande.",
+           "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+6+batata+frita+grande.",
+            "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+7+batata+frita+grande.",
+             "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+8+batata+frita+grande.",
+              "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+9+batata+frita+grande.",
+               "https://api.whatsapp.com/send?phone=5511944502708&text=gostaria+de+pedir+10+batata+frita+grande.",
+               
+      
+      
+    ];
+    gerarPedidoButton30.addEventListener('click', () => {
+      const quantidade = quantidadeInput30.value;
+      const link = links30[quantidade - 1];
+      linkPedido30.href = link;
+      linkPedido30.click();
+    });
+    
+    
+    
+    
+    // Adicione mais scripts para os cardápios adicionais...
+  </script>
+  
+  <!--rodapé do site-->
+  <footer>
+  
+  
+  <div class="footer">
+  
+  
+  <p>
+  
+ &copy; 2024 dev.Antonio Marcos
+  </p>
+   </div>
+  </footer>
+
+</body>
+</html>
